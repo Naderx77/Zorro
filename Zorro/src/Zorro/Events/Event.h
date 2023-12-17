@@ -73,7 +73,7 @@ namespace Zorro {
     class EventDispatcher
     {
       template<typename T>
-      using EventFn = std::_Can_call_function_object<bool(T&)>;
+      using EventFn = std::function<bool(T&)>;
     public:
       EventDispatcher(Event& event)
         : m_Event(event) {}
