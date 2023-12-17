@@ -18,8 +18,50 @@ namespace Zorro {
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "WindowResizeEvent: " << m_width << ", " << m_Height;
+			ss << "WindowResizeEvent: " << m_Width << ", " << m_Height;
 			return ss.str();
 		}
+
+		EVENT_CLASS_TYPE(WindowResize)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+
+	private:
+		unsigned int m_Width, m_Height;
+	};
+
+	class ZORRO_API WindowCloseEvent : public Event
+	{
+	public:
+		WindowCloseEvent() {}
+
+		EVENT_CLASS_TYPE(WindowClose)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
+
+	class ZORRO_API AppTickEvent : public Event
+	{
+	public:
+		AppTickEvent() {}
+
+		EVENT_CLASS_TYPE(AppTick)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
+
+	class ZORRO_API AppUpdateEvent : public Event
+	{
+	public:
+		AppUpdateEvent() {}
+
+		EVENT_CLASS_TYPE(AppUpdate)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
+	};
+
+	class ZORRO_API AppRenderEvent : public Event
+	{
+	public:
+		AppRenderEvent() {}
+
+		EVENT_CLASS_TYPE(AppRender)
+		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 }
