@@ -25,7 +25,7 @@
     <ClInclude Include="src\Zorro\Events\Event.h">
       <Filter>Zorro\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Zorro\Events\KayEvent.h">
+    <ClInclude Include="src\Zorro\Events\KeyEvent.h">
       <Filter>Zorro\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Zorro\Events\MouseEvent.h">
@@ -34,6 +34,7 @@
     <ClInclude Include="src\Zorro\Log.h">
       <Filter>Zorro</Filter>
     </ClInclude>
+    <ClInclude Include="src\zrpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Zorro\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Zorro\Log.cpp">
       <Filter>Zorro</Filter>
     </ClCompile>
+    <ClCompile Include="src\zrpch.cpp" />
   </ItemGroup>
 </Project>
