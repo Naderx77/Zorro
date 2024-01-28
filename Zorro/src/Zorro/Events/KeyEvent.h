@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Zorro {
 
   class ZORRO_API KeyEvent : public Event

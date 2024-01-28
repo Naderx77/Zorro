@@ -18,6 +18,9 @@ project "Zorro"
   targetdir ("bin/" .. outputdir .. "/%{prj.name}")
   objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+  pchheader "zrpch.h"
+  pchsource "Zorro/src/zrpch.cpp"
+
   files
   {
     "%{prj.name}/src/**.h",
