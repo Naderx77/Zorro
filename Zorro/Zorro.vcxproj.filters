@@ -4,9 +4,6 @@
     <Filter Include="Zorro">
       <UniqueIdentifier>{A16F9A0E-0D84-C2BF-D605-661F42D9BEF0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Zorro\Events">
-      <UniqueIdentifier>{651C8449-517F-13EE-FA04-4CA4E646DF70}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Zorro.h" />
@@ -18,18 +15,6 @@
     </ClInclude>
     <ClInclude Include="src\Zorro\EntryPoint.h">
       <Filter>Zorro</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Zorro\Events\ApplicationEvent.h">
-      <Filter>Zorro\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Zorro\Events\Event.h">
-      <Filter>Zorro\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Zorro\Events\KayEvent.h">
-      <Filter>Zorro\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Zorro\Events\MouseEvent.h">
-      <Filter>Zorro\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Zorro\Log.h">
       <Filter>Zorro</Filter>

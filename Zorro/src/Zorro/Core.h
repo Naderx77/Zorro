@@ -9,5 +9,3 @@
 #else
   #error Zorro only supports windows
 #endif
-
-#define BIT(X) (1 << X)
